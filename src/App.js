@@ -1,19 +1,19 @@
 import React from 'react';
 import './App.css';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import notebookImage from './img/notebook.png';
-import logo from './img/logo.png';
+import notebookImage from './img/notebook.webp';
+import logo from './img/logo.webp';
 import html from './img/html.svg';
 import css from './img/css.svg';
 import js from './img/javascript.svg';
-import bs from './img/bootstrap.png';
+import bs from './img/bootstrap.webp';
 import tw from './img/tailwindcss.svg';
 import ts from './img/typescript.svg';
-import php from './img/php.png';
+import php from './img/php.webp';
 import react from './img/react.svg';
-import frame1 from './img/Frame1.png';
-import frame2 from './img/Frame2.png';
-import frame3 from './img/Frame3.png';
+import frame1 from './img/Frame1.webp';
+import frame2 from './img/Frame2.webp';
+import frame3 from './img/Frame3.webp';
 
 function App() {
   return (
@@ -39,16 +39,16 @@ function App() {
 
       {/* Barra */}
       <div className="bar">
-        <a target="_blank" aria-label="Link Github" href="https://github.com/VictorBravim">
+        <a aria-label="Link Github" href="https://github.com/VictorBravim">
           <i className='bx bxl-github'></i>
         </a>
-        <a target="_blank" aria-label="Link Linkedin" href="https://www.linkedin.com/in/victor-bravim-4b6871275/">
+        <a aria-label="Link Linkedin" href="https://www.linkedin.com/in/victor-bravim-4b6871275/">
           <i className='bx bxl-linkedin'></i>
         </a>
-        <a target="_blank" aria-label="Link Instagram" href="https://www.instagram.com/victorbravim_/">
+        <a aria-label="Link Instagram" href="https://www.instagram.com/victorbravim_/">
           <i className='bx bxl-instagram'></i>
         </a>
-        <a target="_blank" aria-label="Link whatsapp" href="https://api.whatsapp.com/send?phone=5512996839077">
+        <a aria-label="Link whatsapp" href="https://api.whatsapp.com/send?phone=5512996839077">
           <i className='bx bxl-whatsapp'></i>
         </a>
         <div className="barra"></div>
@@ -62,7 +62,6 @@ function App() {
           <div className="colunas-1">
             <div className="col-1">
               <div className="texto-1">
-                <div className="cubo-animation"></div>
                 <h3>Olá, eu sou</h3>
                 <h1>Victor Bravim</h1>
                 <h2>Front-End Developer.</h2>
@@ -75,7 +74,7 @@ function App() {
             </div>
             <div className="col-2">
               <div className="banner-1">
-                <img src={notebookImage} alt="" />
+                <img src={notebookImage} alt="notebook de inicio" />
               </div>
             </div>
           </div>
@@ -85,7 +84,7 @@ function App() {
         <div id="sobre" className="container-2">
           <div className="colunas-2">
             <div className="texto-2">
-              <h2>Sobre</h2>
+              <h1>Sobre</h1>
               <span className="aboutspan">
                 <i className='bx bx-user'></i>
                 About
@@ -93,7 +92,7 @@ function App() {
             </div>
             <div className="col-3">
               <div className="banner-2">
-                <img src={logo} alt="" />
+                <img src={logo} alt="logo do site" />
               </div>
               <div className="texto-3">
                 <p className="p-texto-3">
@@ -118,7 +117,7 @@ function App() {
         <div id="habilidades" className="container-3">
           <div className="colunas-3">
             <div className="texto-2">
-              <h2>Habilidades</h2>
+              <h1>Habilidades</h1>
               <span className="skillspan">
                 <i className='bx bx-task-x'></i>
                 Skills
@@ -126,35 +125,35 @@ function App() {
             </div>
             <div className="col-4">
               <div className="card">
-                <img src={html} alt="" />
+                <img src={html} alt="html card" />
                 <h1><span>H</span>TML</h1>
               </div>
               <div className="card">
-                <img src={css} alt="" />
+                <img src={css} alt="css card" />
                 <h1><span>C</span>SS</h1>
               </div>
               <div className="card">
-                <img src={js} alt="" />
+                <img src={js} alt="javascript card" />
                 <h1><span>J</span>avaScript</h1>
               </div>
               <div className="card">
-                <img src={ts} alt="" />
+                <img src={ts} alt="typescript card" />
                 <h1><span>T</span>ypeScript</h1>
               </div>
               <div className="card">
-                <img src={bs} alt="" />
+                <img src={bs} alt="bootstrap card" />
                 <h1><span>B</span>ootstrap</h1>
               </div>
               <div className="card">
-                <img src={php} alt="" />
+                <img src={php} alt="php card" />
                 <h1><span>P</span>HP</h1>
               </div>
               <div className="card">
-                <img src={react} alt="" />
+                <img src={react} alt="react card" />
                 <h1><span>R</span>eact</h1>
               </div>
               <div className="card">
-                <img src={tw} alt="" />
+                <img src={tw} alt="tailwind card" />
                 <h1><span>T</span>ailwind</h1>
               </div>
             </div>
@@ -165,7 +164,7 @@ function App() {
         <div id="projetos" className="container-4">
           <div className="colunas-4">
             <div className="texto-2">
-              <h2>Projetos</h2>
+              <h1>Projetos</h1>
               <span className="projetospan">
                 <i className='bx bx-briefcase'></i>
                 Projects
@@ -175,21 +174,21 @@ function App() {
               <div className="grid-block">
                 <div className="tile">
                   <a className="tile-link" href="index.html">
-                    <img className='tile-img tile-img1' src={frame1} alt="" />
+                    <img className='tile-img' src={frame1} alt="imagen de frame-1" />
                   </a>
                 </div>
               </div>
               <div className="grid-block">
                 <div className="tile">
                   <a className="tile-link" href="index.html">
-                    <img className='tile-img tile-img2' src={frame2} alt="" />
+                    <img className='tile-img' src={frame2} alt="imagen de frame-2" />
                   </a>
                 </div>
               </div>
               <div className="grid-block">
                 <div className="tile">
                   <a className="tile-link" href="index.html">
-                    <img className='tile-img tile-img3' src={frame3} alt="" />
+                    <img className='tile-img' src={frame3} alt="imagen de frame-3" />
                   </a>
                 </div>
               </div>
@@ -203,22 +202,22 @@ function App() {
                 <div className="cubo">
                   <div className="faces">
                     <div className="face face1">
-                      <img src={css} alt="" />
+                      <img src={css} alt="css face" />
                     </div>
                     <div className="face face2">
-                      <img src={html} alt="" />
+                      <img src={html} alt="html face" />
                     </div>
                     <div className="face face3">
-                      <img src={js} alt="" />
+                      <img src={js} alt="javascript face" />
                     </div>
                     <div className="face face4">
-                      <img src={ts} alt="" />
+                      <img src={ts} alt="typescript face" />
                     </div>
                     <div className="face face5">
-                      <img src={react} alt="" />
+                      <img src={react} alt="react face" />
                     </div>
                     <div className="face face6">
-                      <img src={php} alt="" />
+                      <img src={php} alt="php face" />
                     </div>
                   </div>
                 </div>
@@ -231,7 +230,7 @@ function App() {
         <div id="contato" className="container-5">
           <div className="colunas-5">
             <div className="texto-2">
-              <h2>Contatos</h2>
+              <h1>Contatos</h1>
               <span className="contatospan">
                 <i className='bx bx-envelope'></i>
                 Contact
@@ -239,29 +238,29 @@ function App() {
             </div>
             <div className="contatos">
               <div className="contacts">
-                <h4>
+                <h2>
                   <i className='bx bxl-whatsapp contac'></i>
                   WhatsApp
-                </h4>
+                </h2>
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=5512996839077">
                   <p>+55 12
                     99683-9077</p>
                 </a>
               </div>
               <div className="contacts">
-                <h4>
+                <h2>
                   <i className='bx bx-envelope contac'></i>
                   Email
-                </h4>
+                </h2>
                 <a target="_blank" href="mailto:victorbravimofc@gmail.com">
                   <p>victorbravimofc@gmail.com</p>
                 </a>
               </div>
               <div className="contacts">
-                <h4>
+                <h2>
                   <i className='bx bx-current-location contac'></i>
                   Localização
-                </h4>
+                </h2>
                 <a target="_blank" href="https://www.google.com/maps/place/Lorena,+SP/@-22.730
                         9981,-45.1114119,13z/data=!3m1!4b1!4m6!3m5!1s0x94ccc9201d468adf:0xc9ce9c4b4546
                         c622!8m2!3d-22.7348827!4d-45.1183782!16zL20vMDQxcDRi?entry=ttu">
@@ -274,7 +273,7 @@ function App() {
 
         {/* Footer */}
         <footer className="fote">
-          <h4> © 2023 <span>Victor Bravim</span></h4>
+          <h4> © 2024 <span>Victor Bravim</span></h4>
           <div className="links"><a target="_blank" aria-label="Link Github" href="https://github.com/VictorBravim">
             <i className='bx bxl-github'></i>
           </a>
