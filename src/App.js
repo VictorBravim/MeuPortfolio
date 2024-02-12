@@ -1,9 +1,23 @@
 import React from 'react';
 import './App.css';
+import notebookImage from './img/notebook.png';
+import logo from './img/logo.png';
+import html from './img/html.svg';
+import css from './img/css.svg';
+import js from './img/javascript.svg';
+import bs from './img/bootstrap.png';
+import tw from './img/tailwindcss.svg';
+import ts from './img/typescript.svg';
+import php from './img/php.png';
+import react from './img/react.svg';
+import frame1 from './img/Frame1.png';
+import frame2 from './img/Frame2.png';
+import frame3 from './img/Frame3.png';
 
 function App() {
   return (
     <div className="App">
+
       {/* Nav */}
       <nav>
         <div className="logo">
@@ -60,7 +74,7 @@ function App() {
             </div>
             <div className="col-2">
               <div className="banner-1">
-                <img src="/img/notebook.png" alt="" />
+                <img src={notebookImage} alt="" />
               </div>
             </div>
           </div>
@@ -77,27 +91,27 @@ function App() {
               </span>
             </div>
             <div className="col-3">
-              <div className="banner-2 js-tilt" data-tilt>
-                <img src="/img/logo.png" alt="" />
+              <div className="banner-2">
+                <img src={logo} alt="" />
               </div>
-            </div>
-            <div className="texto-3">
-              <p className="p-texto-3">Sou um desenvolvedor Front-End que vive em Lorena SP, Curso Faculdade em
-                Análise e desenvolvimento de sistemas.
-                <br />
-                <br />
-                Meu interesse e primeiro contato com desenvolvimento web começou em 2020, com a criação de
-                um site feito em Html, Css e JavaScript.
-                <br />
-                <br />
-                Atualmente estou estudando e desenvolvendo projetos web, de modo a ampliar meus
-                conhecimentos e assim aprimorar ainda mais as habilidades que possuo.
-              </p>
-              <a className="btn-2-a" href="Curriculo Aqui!" download="">
-                <button className="btn-2">Download Curriculo
-                  <i className='bx bx-download'></i>
-                </button>
-              </a>
+              <div className="texto-3">
+                <p className="p-texto-3">Sou um desenvolvedor Front-End que vive em Lorena SP, Curso Faculdade em
+                  Análise e desenvolvimento de sistemas.
+                  <br />
+                  <br />
+                  Meu interesse e primeiro contato com desenvolvimento web começou em 2020, com a criação de
+                  um site feito em Html, Css e JavaScript.
+                  <br />
+                  <br />
+                  Atualmente estou estudando e desenvolvendo projetos web, de modo a ampliar meus
+                  conhecimentos e assim aprimorar ainda mais as habilidades que possuo.
+                </p>
+                <a className="btn-2-a" href="Curriculo Aqui!" download="">
+                  <button className="btn-2">Download Curriculo
+                    <i className='bx bx-download'></i>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -114,35 +128,35 @@ function App() {
             </div>
             <div className="col-4">
               <div className="card">
-                <img src="/img/html.svg" alt="" />
+                <img src={html} alt="" />
                 <h1><span>H</span>TML</h1>
               </div>
               <div className="card">
-                <img src="/img/css.svg" alt="" />
+                <img src={css} alt="" />
                 <h1><span>C</span>SS</h1>
               </div>
               <div className="card">
-                <img src="/img/javascript.svg" alt="" />
+                <img src={js} alt="" />
                 <h1><span>J</span>avaScript</h1>
               </div>
               <div className="card">
-                <img src="/img/typescript.svg" alt="" />
+                <img src={ts} alt="" />
                 <h1><span>T</span>ypeScript</h1>
               </div>
               <div className="card">
-                <img src="/img/bootstrap.png" alt="" />
+                <img src={bs} alt="" />
                 <h1><span>B</span>ootstrap</h1>
               </div>
               <div className="card">
-                <img src="/img/php.png" alt="" />
+                <img src={php} alt="" />
                 <h1><span>P</span>HP</h1>
               </div>
               <div className="card">
-                <img src="/img/react.svg" alt="" />
+                <img src={react} alt="" />
                 <h1><span>R</span>eact</h1>
               </div>
               <div className="card">
-                <img src="/img/tailwindcss.svg" alt="" />
+                <img src={tw} alt="" />
                 <h1><span>T</span>ailwind</h1>
               </div>
             </div>
@@ -150,63 +164,63 @@ function App() {
         </div>
 
         {/* Container-4 */}
-        <div id="projetos" class="container-4">
-          <div class="colunas-4">
-            <div class="texto-2">
+        <div id="projetos" className="container-4">
+          <div className="colunas-4">
+            <div className="texto-2">
               <h2>Projetos</h2>
-              <span class="projetospan">
-                <i class='bx bx-briefcase'></i>
+              <span className="projetospan">
+                <i className='bx bx-briefcase'></i>
                 Projects
               </span>
             </div>
-            <div class="col-5">
-              <div class="grid-block">
-                <div class="tile js-tilt">
-                  <a class="tile-link" href="index.html">
-                    <img class="tile-img tile-img1" src="/img/Frame1.png" alt="Image" />
+            <div className="col-5">
+              <div className="grid-block">
+                <div className="tile">
+                  <a className="tile-link" href="index.html">
+                    <img className='tile-img tile-img1' src={frame1} alt="" />
                   </a>
                 </div>
               </div>
-              <div class="grid-block">
-                <div class="tile js-tilt">
-                  <a class="tile-link" href="index.html">
-                    <img class="tile-img tile-img2" src="/img/Frame2.png" alt="Image" />
+              <div className="grid-block">
+                <div className="tile">
+                  <a className="tile-link" href="index.html">
+                    <img className='tile-img tile-img2' src={frame2} alt="" />
                   </a>
                 </div>
               </div>
-              <div class="grid-block">
-                <div class="tile js-tilt">
-                  <a class="tile-link" href="index.html">
-                    <img class="tile-img tile-img3" src="/img/Frame3.png" alt="Image" />
+              <div className="grid-block">
+                <div className="tile">
+                  <a className="tile-link" href="index.html">
+                    <img className='tile-img tile-img3' src={frame3} alt="" />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="all">
+            <div className="all">
               <h3>Todos os projetos</h3>
-              <div class="col-6">
+              <div className="col-6">
                 <a target="_blank" href="https://github.com/VictorBravim?tab=repositories"><button>Repositório
-                  <i class='bx bxl-github'></i>
+                  <i className='bx bxl-github'></i>
                 </button></a>
-                <div class="cubo">
-                  <div class="faces">
-                    <div class="face face1">
-                      <img src="/img/css.svg" />
+                <div className="cubo">
+                  <div className="faces">
+                    <div className="face face1">
+                      <img src={css} alt="" />
                     </div>
-                    <div class="face face2">
-                      <img src="/img/html.svg" />
+                    <div className="face face2">
+                      <img src={html} alt="" />
                     </div>
-                    <div class="face face3">
-                      <img src="/img/javascript.svg" />
+                    <div className="face face3">
+                      <img src={js} alt="" />
                     </div>
-                    <div class="face face4">
-                      <img src="/img/typescript.svg" />
+                    <div className="face face4">
+                      <img src={ts} alt="" />
                     </div>
-                    <div class="face face5">
-                      <img src="/img/react.svg" />
+                    <div className="face face5">
+                      <img src={react} alt="" />
                     </div>
-                    <div class="face face6">
-                      <img src="/img/php.png" />
+                    <div className="face face6">
+                      <img src={php} alt="" />
                     </div>
                   </div>
                 </div>
@@ -216,19 +230,19 @@ function App() {
         </div>
 
         {/* Container-5 */}
-        <div id="contato" class="container-5">
-          <div class="colunas-5">
-            <div class="texto-2">
+        <div id="contato" className="container-5">
+          <div className="colunas-5">
+            <div className="texto-2">
               <h2>Contatos</h2>
-              <span class="contatospan">
-                <i class='bx bx-envelope'></i>
+              <span className="contatospan">
+                <i className='bx bx-envelope'></i>
                 Contact
               </span>
             </div>
-            <div class="contatos">
-              <div class="contacts">
+            <div className="contatos">
+              <div className="contacts">
                 <h4>
-                  <i class='bx bxl-whatsapp contac'></i>
+                  <i className='bx bxl-whatsapp contac'></i>
                   WhatsApp
                 </h4>
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=5512996839077">
@@ -236,18 +250,18 @@ function App() {
                     99683-9077</p>
                 </a>
               </div>
-              <div class="contacts">
+              <div className="contacts">
                 <h4>
-                  <i class='bx bx-envelope contac'></i>
+                  <i className='bx bx-envelope contac'></i>
                   Email
                 </h4>
                 <a target="_blank" href="mailto:victorbravimofc@gmail.com">
                   <p>victorbravimofc@gmail.com</p>
                 </a>
               </div>
-              <div class="contacts">
+              <div className="contacts">
                 <h4>
-                  <i class='bx bx-current-location contac'></i>
+                  <i className='bx bx-current-location contac'></i>
                   Localização
                 </h4>
                 <a target="_blank" href="https://www.google.com/maps/place/Lorena,+SP/@-22.730
@@ -261,20 +275,20 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer class="fote">
+        <footer className="fote">
           <h4> © 2023 <span>Victor Bravim</span></h4>
-          <div class="links"><a target="_blank" aria-label="Link Github" href="https://github.com/VictorBravim">
-            <i class='bx bxl-github'></i>
+          <div className="links"><a target="_blank" aria-label="Link Github" href="https://github.com/VictorBravim">
+            <i className='bx bxl-github'></i>
           </a>
             <a target="_blank" aria-label="Link Linkedin"
               href="https://www.linkedin.com/in/victor-bravim-4b6871275/">
-              <i class='bx bxl-linkedin'></i>
+              <i className='bx bxl-linkedin'></i>
             </a>
             <a target="_blank" aria-label="Link Instagram" href="https://www.instagram.com/victorbravim_/">
-              <i class='bx bxl-instagram'></i>
+              <i className='bx bxl-instagram'></i>
             </a>
             <a target="_blank" aria-label="Link whatsapp" href="https://api.whatsapp.com/send?phone=5512996839077">
-              <i class='bx bxl-whatsapp'></i>
+              <i className='bx bxl-whatsapp'></i>
             </a>
           </div>
         </footer>
