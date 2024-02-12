@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import notebookImage from './img/notebook.png';
 import logo from './img/logo.png';
 import html from './img/html.svg';
@@ -28,11 +29,11 @@ function App() {
           <i className="fas fa-bars"></i>
         </label>
         <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><Link to="inicio" smooth={true} duration={1000}>Início</Link></li>
+          <li><Link to="sobre" smooth={true} duration={1000}>Sobre</Link></li>
+          <li><Link to="habilidades" smooth={true} duration={1000}>Habilidades</Link></li>
+          <li><Link to="projetos" smooth={true} duration={1000}>Projetos</Link></li>
+          <li><Link to="contato" smooth={true} duration={1000}>Contato</Link></li>
         </ul>
       </nav>
 
@@ -95,16 +96,13 @@ function App() {
                 <img src={logo} alt="" />
               </div>
               <div className="texto-3">
-                <p className="p-texto-3">Sou um desenvolvedor Front-End que vive em Lorena SP, Curso Faculdade em
+                <p className="p-texto-3">
+                  Sou um desenvolvedor Front-End que vive em Lorena SP, Curso Faculdade em
                   Análise e desenvolvimento de sistemas.
                   <br />
                   <br />
                   Meu interesse e primeiro contato com desenvolvimento web começou em 2020, com a criação de
                   um site feito em Html, Css e JavaScript.
-                  <br />
-                  <br />
-                  Atualmente estou estudando e desenvolvendo projetos web, de modo a ampliar meus
-                  conhecimentos e assim aprimorar ainda mais as habilidades que possuo.
                 </p>
                 <a className="btn-2-a" href="Curriculo Aqui!" download="">
                   <button className="btn-2">Download Curriculo
